@@ -5,7 +5,7 @@
 !.gitignore
 !.zshrc
 !.config/
-!screenshots/
+!screenshot/
 
 # Allow only relevant .config subdirectories
 !.config/i3/
