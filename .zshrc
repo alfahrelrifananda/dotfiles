@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="jbergantine"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,7 +119,8 @@ alias email="mutt"
 alias irc="weechat"
 alias mutt='neomutt'
 alias jam='tty-clock -c -C 7 -s -b'
-alias copy='wl-copy <'
+alias copy='xclip -selection clipboard <'
+alias vpnon='~/scripts/vpn_on.sh'
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
@@ -134,4 +135,4 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 ## Autostart
-fastfetch
+# fastfetch
