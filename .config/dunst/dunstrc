@@ -1,0 +1,26 @@
+[global]
+    font = sans 11
+    frame_width = 1
+    frame_color = "#ffffff"
+    separator_color = auto
+    corner_radius = 5
+    padding = 15
+    horizontal_padding = 15
+    
+    origin = top-right
+    offset = 10x10
+    
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 5
+    
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 10
+    
+[urgency_critical]
+    background = "#1e1e2e"
+    foreground = "#f38ba8"
+    timeout = 0

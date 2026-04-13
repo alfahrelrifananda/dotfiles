@@ -1,0 +1,29 @@
+[wireless]
+command=ESSID=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -d: -f2); if [ -n "$ESSID" ]; then echo "<span color='#89b4fa'> 󰤨 $ESSID </span>"; else echo "<span color='#f38ba8'> 󰤭 down </span>"; fi
+interval=5
+markup=pango
+
+[battery]
+command=STATUS=$(cat /sys/class/power_supply/BAT0/status); CAP=$(cat /sys/class/power_supply/BAT0/capacity); if [ "$STATUS" = "Charging" ]; then echo "<span color='#a6e3a1'> 󰂄 ${CAP}%</span>"; elif [ "$CAP" -le 15 ]; then echo "<span color='#f38ba8'> 󰁺 ${CAP}%</span>"; elif [ "$CAP" -le 50 ]; then echo "<span color='#fab387'> 󰁾 ${CAP}%</span>"; else echo "<span color='#a6e3a1'> 󰁹 ${CAP}%</span>"; fi
+interval=5
+markup=pango
+
+[memory]
+command=echo "<span color='#cba6f7'> 󰍛 $(free -h | awk '/^Mem/ {print $3}') </span>"
+interval=5
+markup=pango
+
+[volume]
+command=MUTED=$(pactl get-sink-mute @DEFAULT_SINK@ | grep -o 'yes'); VOL=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+%' | head -1); if [ "$MUTED" = "yes" ]; then echo "<span color='#f38ba8'> 󰝟 muted </span>"; else echo "<span color='#94e2d5'> 󰕾 $VOL </span>"; fi
+interval=1
+markup=pango
+
+[brightness]
+command=echo "<span color='#f9e2af'> 󰃟 $(($(brightnessctl get) * 100 / $(brightnessctl max)))% </span>"
+interval=1
+markup=pango
+
+[time]
+command=echo "<span color='#cdd6f4'> $(date '+%d %B %Y • %H:%M') </span>"
+interval=1
+markup=pango

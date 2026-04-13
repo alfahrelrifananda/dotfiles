@@ -1,0 +1,47 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+order += "memory"
+order += "volume master"
+order += "tztime local"
+
+wireless _first_ {
+    format_up = "  %essid"
+    format_down = "󰖪 down"
+}
+
+ethernet _first_ {
+    format_up = "󰈁 %ip"
+    format_down = ""
+}
+
+battery all {
+    format = "Battery: %percentage"
+    format_down = "No battery"
+    status_chr = " charging"
+    status_bat = " "
+    status_unk = "? "
+    status_full = " "
+    low_threshold = 15
+}
+
+memory {
+    format = "CPU: %percentage_used"
+    threshold_degraded = "10%"
+}
+
+volume master {
+    format = "Volume: %volume"
+    format_muted = "󰝟 muted"
+    device = "default"
+    mixer = "Master"
+}
+
+tztime local {
+    format = "%d %B %Y • %H:%M"
+}
