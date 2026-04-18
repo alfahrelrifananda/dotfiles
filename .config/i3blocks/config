@@ -1,3 +1,8 @@
+[network-status]
+command=~/.config/i3blocks/scripts/netstatus.sh
+interval=5
+markup=pango
+
 [wireless]
 command=ESSID=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -d: -f2); if [ -n "$ESSID" ]; then echo "<span color='#89b4fa'> 󰤨 $ESSID </span>"; else echo "<span color='#f38ba8'> 󰤭 down </span>"; fi
 interval=5
