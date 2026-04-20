@@ -101,6 +101,8 @@
 .config/VSCodium
 .config/waypaper
 .config/weechat
+.config/hypr/general_random
+.config/hypr/anime_random
 .config/wintc
 .config/wofi
 .config/xfce4
