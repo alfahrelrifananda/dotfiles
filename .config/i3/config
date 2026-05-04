@@ -200,6 +200,9 @@ bindsym Print exec --no-startup-id maim --select | xclip -selection clipboard -t
 # cycle through windows
 bindsym $mod+Tab focus next
 
+# tor and vpn
+bindsym $mod+n exec --no-startup-id ~/.config/i3/scripts/net-menu.sh
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
