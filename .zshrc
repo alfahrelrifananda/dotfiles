@@ -120,6 +120,7 @@ alias irc="weechat"
 alias mutt='neomutt'
 alias jam='tty-clock -c -C 7 -s -b'
 alias copy='xclip -selection clipboard <'
+alias copygit='xclip -selection clipboard < ~/personal/.git-credentials'
 alias vpnon='~/scripts/vpn_on.sh'
 alias vpnoff='~/scripts/vpn_off.sh'
 alias toron='~/scripts/tor_on.sh'
