@@ -124,7 +124,8 @@ alias vpnon='~/scripts/vpn_on.sh'
 alias vpnoff='~/scripts/vpn_off.sh'
 alias toron='~/scripts/tor_on.sh'
 alias toroff='~/scripts/tor_off.sh'
-
+alias ls='lsd -l --date relative --color always'
+alias la='lsd -la --date relative --color always'
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
