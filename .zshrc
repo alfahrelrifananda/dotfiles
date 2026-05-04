@@ -121,6 +121,10 @@ alias mutt='neomutt'
 alias jam='tty-clock -c -C 7 -s -b'
 alias copy='xclip -selection clipboard <'
 alias vpnon='~/scripts/vpn_on.sh'
+alias vpnoff='~/scripts/vpn_off.sh'
+alias toron='~/scripts/tor_on.sh'
+alias toroff='~/scripts/tor_off.sh'
+
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall

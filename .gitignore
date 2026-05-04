@@ -31,6 +31,8 @@
 !.config/fastfetch/**
 !README.md
 !LICENSE
+!scripts/
+!scripts/**
 
 # Ignore everything else inside .config
 .config/a2j
@@ -193,7 +195,6 @@ personal/
 Personal/
 Pictures/
 Public/
-scripts/
 Templates/
 Videos/
 dotfiles/
