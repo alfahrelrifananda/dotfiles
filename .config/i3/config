@@ -39,7 +39,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock
 
 # the one i added
 # set the wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/sunrise.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/hymny.jpg
 
 # picom
 exec --no-startup-id picom
@@ -199,9 +199,6 @@ bindsym Print exec --no-startup-id maim --select | xclip -selection clipboard -t
 
 # cycle through windows
 bindsym $mod+Tab focus next
-
-# tor and vpn
-bindsym $mod+n exec --no-startup-id ~/.config/i3/scripts/net-menu.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
