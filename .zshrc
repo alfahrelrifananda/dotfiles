@@ -141,5 +141,5 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 ## Autostart
-# fastfetch
+fastfetch
 todo.sh ls
