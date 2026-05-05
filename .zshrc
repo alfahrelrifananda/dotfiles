@@ -142,4 +142,6 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 ## Autostart
 fastfetch
+echo ""
 todo.sh ls
+echo ""
