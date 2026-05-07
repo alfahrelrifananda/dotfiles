@@ -9,6 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+set $PATH /home/rel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin
+exec --no-startup-id export PATH="/home/rel/.local/bin:$PATH"
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -182,7 +185,7 @@ gaps inner 10
 gaps outer 15
 
 # super + space open dmenu
-bindsym $mod+space exec --no-startup-id dmenu_run
+bindsym $mod+space exec --no-startup-id /home/rel/.local/bin/dmenu_wrapper.sh
 
 # volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && notify-send "Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+%' | head -1)" -t 1000

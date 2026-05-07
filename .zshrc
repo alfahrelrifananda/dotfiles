@@ -145,3 +145,4 @@ fastfetch
 echo ""
 todo.sh ls
 echo ""
+export PATH="$HOME/.local/bin:$PATH"
