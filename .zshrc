@@ -144,5 +144,4 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 fastfetch
 echo ""
 todo.sh ls
-echo ""
 export PATH="$HOME/.local/bin:$PATH"
